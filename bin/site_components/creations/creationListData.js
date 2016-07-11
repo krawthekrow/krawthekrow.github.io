@@ -13,15 +13,15 @@ module.exports = [{
     subtitle: 'A 29-bit Computer for The Powder Toy',
     image: 'lightpc.jpg',
     link: 'http://powdertoy.co.uk/Browse/View.html?ID=1570768',
-    description: 'Lazy man\'s <a href="http://www.megaprocessor.com/">megaprocessor</a> that you can actually play with, right now. Built with PHOT technology, which has been outdated by ARAY/DRAY technology, but nobody has made one with ARAY/DRAY yet because nobody seems to play The Powder Toy anymore. The <a href="files/lightpc-compiler.py">compiler</a>, a <a href="files/lightpc-timelapse.gif">creation timelapse</a> and <a href="files/lightpc-resources.zip">lots more goodies</a> are available for your enjoyment.',
+    description: 'Lazy man\'s <a href="http://www.megaprocessor.com/">megaprocessor</a> that you can actually play with, right now. Built with PHOT technology, which has been outdated by ARAY/DRAY technology, but nobody has made one with ARAY/DRAY yet because nobody seems to play The Powder Toy anymore. The <a href="files/creations/lightpc-compiler.py">compiler</a>, a <a href="files/creations/lightpc-timelapse.gif">creation timelapse</a> and <a href="files/creations/lightpc-resources.zip">lots more goodies</a> are available for your enjoyment.',
     productionPeriod: 'Mid 2014',
     status: 'Finished'
 }, {
     name: 'Fourier Transform Visualiser',
     subtitle: 'Watch a function being reconstructed from sinusoids',
     image: 'fouriertransform.jpg',
-    link: 'files/fouriertransform.swf',
-    description: 'Built back in the day when Flash was still a thing, this tool illustrates how a function can be decomposed into sinusoids through the <strike>Fourier</strike> Discrete Cosine Transform. Use the mouse to draw a function, then press spacebar repeatedly to reconstruct it from sinusoids. Hold the spacebar down to accelerate. Press "Z" to view the spectrum and "R" to reset.',
+    link: 'files/creations/fouriertransform.swf',
+    description: 'Built back in the day when Flash was still a thing, this tool illustrates how a function can be decomposed into sinusoids through the <span style="text-decoration: line-through;">Fourier</span> Discrete Cosine Transform. Use the mouse to draw a function, then press spacebar repeatedly to reconstruct it from sinusoids. Hold the spacebar down to accelerate. Press "Z" to view the spectrum and "R" to reset.',
     productionPeriod: 'Mid 2013',
     status: 'Finished'
 }];

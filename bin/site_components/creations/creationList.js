@@ -19,7 +19,7 @@ module.exports = function (props) {
                 React.createElement(
                     'div',
                     { className: 'col-sm-4', style: { paddingTop: '20px' } },
-                    React.createElement('img', { src: 'img/creations/' + creation.image, style: { width: '100%' } })
+                    React.createElement('img', { src: 'img/creations/' + creation.image, alt: creation.name, style: { width: '100%' } })
                 ),
                 React.createElement(
                     'div',

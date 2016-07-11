@@ -8,7 +8,7 @@ module.exports = (props) => {
             { listData.map((creation, id) =>
                 <div className="row" key={id}>
                     <div className="col-sm-4" style={{paddingTop: '20px'}}>
-                        <img src={`img/creations/${creation.image}`} style={{width: '100%'}} />
+                        <img src={`img/creations/${creation.image}`} alt={creation.name} style={{width: '100%'}} />
                     </div>
                     <div className="col-sm-8">
                         <h2>
