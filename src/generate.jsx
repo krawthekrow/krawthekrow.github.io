@@ -17,11 +17,16 @@ const Homepage = (props) =>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossOrigin="anonymous" />
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossOrigin="anonymous" />
             <script src="https://use.fontawesome.com/c089dd9f5b.js"></script>
-            $_PAGE_STYLES_$
+            <style>$_PAGE_STYLES_$</style>
         </head>
         <body>
             <section className="jumbotron text-center">
                 <div className="container">
+                    <img src="img/avatar128.png" alt="Kraw's Avatar" className="img-circle text-center" style={{
+                        width: '128px',
+                        padding: '20px',
+                        backgroundColor: '#fff'
+                    }} />
                     <h1>Hi, I'm Mark!</h1>
                     <p className="text-muted"><i>
                         Exploring the epic, discovering the beautiful,<br/>
@@ -58,15 +63,11 @@ const homepageMarkup = beautifyHTML(
         </script>
     `)
     .replace('$_PAGE_STYLES_$',`
-        <style>
-            .social-btn{
-                color: #777;
-                margin: 0px 5px;
-            }
-        </style>
+        .social-btn{
+            color: #777;
+            margin: 0px 5px;
+        }
     `));
-
-console.log(homepageMarkup);
 
 fs.writeFile('index.html', homepageMarkup, err => {
     if(err){

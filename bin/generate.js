@@ -27,7 +27,11 @@ var Homepage = function Homepage(props) {
             React.createElement('link', { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css', integrity: 'sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7', crossOrigin: 'anonymous' }),
             React.createElement('link', { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css', integrity: 'sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r', crossOrigin: 'anonymous' }),
             React.createElement('script', { src: 'https://use.fontawesome.com/c089dd9f5b.js' }),
-            '$_PAGE_STYLES_$'
+            React.createElement(
+                'style',
+                null,
+                '$_PAGE_STYLES_$'
+            )
         ),
         React.createElement(
             'body',
@@ -38,6 +42,11 @@ var Homepage = function Homepage(props) {
                 React.createElement(
                     'div',
                     { className: 'container' },
+                    React.createElement('img', { src: 'img/avatar128.png', alt: 'Kraw\'s Avatar', className: 'img-circle text-center', style: {
+                            width: '128px',
+                            padding: '20px',
+                            backgroundColor: '#fff'
+                        } }),
                     React.createElement(
                         'h1',
                         null,
@@ -92,9 +101,7 @@ var Homepage = function Homepage(props) {
     );
 };
 
-var homepageMarkup = beautifyHTML(('<!DOCTYPE html>' + render(React.createElement(Homepage, null))).replace('$_EMAIL_$', '\n        <script type="text/javascript">\n            document.write(\'<a href="mailt\'+\'o:krawt\'+\'hekrow@g\'+\'mail.com"><i class="fa fa-envelope fa-2x social-btn" aria-hidden="true"></i></a>\');\n        </script>\n    ').replace('$_PAGE_STYLES_$', '\n        <style>\n            .social-btn{\n                color: #777;\n                margin: 0px 5px;\n            }\n        </style>\n    '));
-
-console.log(homepageMarkup);
+var homepageMarkup = beautifyHTML(('<!DOCTYPE html>' + render(React.createElement(Homepage, null))).replace('$_EMAIL_$', '\n        <script type="text/javascript">\n            document.write(\'<a href="mailt\'+\'o:krawt\'+\'hekrow@g\'+\'mail.com"><i class="fa fa-envelope fa-2x social-btn" aria-hidden="true"></i></a>\');\n        </script>\n    ').replace('$_PAGE_STYLES_$', '\n        .social-btn{\n            color: #777;\n            margin: 0px 5px;\n        }\n    '));
 
 fs.writeFile('index.html', homepageMarkup, function (err) {
     if (err) {
