@@ -14,6 +14,7 @@
   },
   "scripts": {
     "babelWatch": "babel src --watch --out-dir bin",
+    "babelCompile": "babel src --out-dir bin",
     "generate": "node bin/generate.js"
   },
   "repository": {

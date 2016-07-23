@@ -42,7 +42,7 @@ var Homepage = function Homepage(props) {
                 React.createElement(
                     'div',
                     { className: 'container' },
-                    React.createElement('img', { src: 'img/avatar128.png', alt: 'Kraw\'s Avatar', className: 'img-circle text-center', style: {
+                    React.createElement('img', { src: 'static/img/avatar128.png', alt: 'Kraw\'s Avatar', className: 'img-circle text-center', style: {
                             width: '128px',
                             padding: '20px',
                             backgroundColor: '#fff'

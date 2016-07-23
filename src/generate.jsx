@@ -22,7 +22,7 @@ const Homepage = (props) =>
         <body>
             <section className="jumbotron text-center">
                 <div className="container">
-                    <img src="img/avatar128.png" alt="Kraw's Avatar" className="img-circle text-center" style={{
+                    <img src="static/img/avatar128.png" alt="Kraw's Avatar" className="img-circle text-center" style={{
                         width: '128px',
                         padding: '20px',
                         backgroundColor: '#fff'
