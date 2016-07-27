@@ -86,13 +86,18 @@ var Homepage = function Homepage(props) {
                         '$_EMAIL_$',
                         React.createElement(
                             'a',
+                            { href: 'https://twitter.com/krawthekrow' },
+                            React.createElement('i', { className: 'fa fa-twitter fa-2x social-btn', 'aria-hidden': 'true' })
+                        ),
+                        React.createElement(
+                            'a',
                             { href: 'https://github.com/krawthekrow' },
                             React.createElement('i', { className: 'fa fa-github fa-2x social-btn', 'aria-hidden': 'true' })
                         ),
                         React.createElement(
                             'a',
-                            { href: 'https://twitter.com/krawthekrow' },
-                            React.createElement('i', { className: 'fa fa-twitter fa-2x social-btn', 'aria-hidden': 'true' })
+                            { href: 'https://krawthekrow.wordpress.com/' },
+                            React.createElement('i', { className: 'fa fa-wordpress fa-2x social-btn', 'aria-hidden': 'true' })
                         )
                     )
                 )

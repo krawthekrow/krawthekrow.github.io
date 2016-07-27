@@ -47,8 +47,9 @@ const Homepage = (props) =>
                 }}>
                     <p className="text-center">
                         $_EMAIL_$
-                        <a href="https://github.com/krawthekrow"><i className="fa fa-github fa-2x social-btn" aria-hidden="true"></i></a>
                         <a href="https://twitter.com/krawthekrow"><i className="fa fa-twitter fa-2x social-btn" aria-hidden="true"></i></a>
+                        <a href="https://github.com/krawthekrow"><i className="fa fa-github fa-2x social-btn" aria-hidden="true"></i></a>
+                        <a href="https://krawthekrow.wordpress.com/"><i className="fa fa-wordpress fa-2x social-btn" aria-hidden="true"></i></a>
                     </p>
                 </div>
             </footer>
