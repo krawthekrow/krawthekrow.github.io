@@ -22,10 +22,8 @@ const Homepage = (props) =>
         <body>
             <section className="jumbotron text-center">
                 <div className="container">
-                    <img src="static/img/avatar128.png" alt="Kraw's Avatar" className="img-circle text-center" style={{
-                        width: '128px',
-                        padding: '20px',
-                        backgroundColor: '#fff'
+                    <img src="static/img/avatar.png" alt="Kraw's Avatar" className="img-circle text-center" style={{
+                        width: '200px'
                     }} />
                     <h1>Hi, I'm Mark!</h1>
                     <p className="text-muted"><i>
