@@ -25,11 +25,8 @@ const Homepage = (props) =>
                     <img src="static/img/avatar.png" alt="Kraw's Avatar" className="img-circle text-center" style={{
                         width: '200px'
                     }} />
-                    <h1>Hi, I'm Mark!</h1>
-                    <p className="text-muted"><i>
-                        Exploring the epic, discovering the beautiful,<br/>
-                        getting the damn API to work.
-                    </i></p>
+                    <h1>Mark's Homepage</h1>
+                    <p className="text-muted"><i>Still figuring out what to put here...</i></p>
                 </div>
             </section>
             <CreationList />

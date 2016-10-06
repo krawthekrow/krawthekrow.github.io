@@ -13,7 +13,7 @@ module.exports = [{
     subtitle: 'A 29-bit Computer for The Powder Toy',
     image: 'lightpc.jpg',
     link: 'http://powdertoy.co.uk/Browse/View.html?ID=1570768',
-    description: 'Lazy man\'s <a href="http://www.megaprocessor.com/">megaprocessor</a> that you can actually play with, right now. Built with PHOT technology, which has been outdated by ARAY/DRAY technology, but nobody has made one with ARAY/DRAY yet because nobody seems to play The Powder Toy anymore. The <a href="static/files/creations/lightpc-compiler.py">compiler</a>, a <a href="static/files/creations/lightpc-timelapse.gif">creation timelapse</a> and <a href="static/files/creations/lightpc-resources.zip">lots more goodies</a> are available for your enjoyment.',
+    description: 'Lazy man\'s <a href="http://www.megaprocessor.com/">megaprocessor</a> that you can actually play with, right now. Almost immediately outdated by subframe technology, but no one made a subframe computer until 2016 (the <a href="http://powdertoy.co.uk/Browse/View.html?ID=1932845">R16K1S60</a>). The <a href="static/files/creations/lightpc-compiler.py">compiler</a>, a <a href="static/files/creations/lightpc-timelapse.gif">creation timelapse</a> and <a href="static/files/creations/lightpc-resources.zip">lots more goodies</a> are available for your enjoyment.',
     productionPeriod: 'Mid 2014',
     status: 'Finished'
 }, {

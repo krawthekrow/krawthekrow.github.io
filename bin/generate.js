@@ -48,7 +48,7 @@ var Homepage = function Homepage(props) {
                     React.createElement(
                         'h1',
                         null,
-                        'Hi, I\'m Mark!'
+                        'Mark\'s Homepage'
                     ),
                     React.createElement(
                         'p',
@@ -56,9 +56,7 @@ var Homepage = function Homepage(props) {
                         React.createElement(
                             'i',
                             null,
-                            'Exploring the epic, discovering the beautiful,',
-                            React.createElement('br', null),
-                            'getting the damn API to work.'
+                            'Still figuring out what to put here...'
                         )
                     )
                 )
