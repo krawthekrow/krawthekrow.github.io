@@ -7,11 +7,6 @@ module.exports = function (props) {
     return React.createElement(
         'section',
         { className: 'container', style: { maxWidth: '1000px' } },
-        React.createElement(
-            'h1',
-            { className: 'text-center' },
-            'Stuff I\'ve Made'
-        ),
         listData.map(function (creation, id) {
             return React.createElement(
                 'div',

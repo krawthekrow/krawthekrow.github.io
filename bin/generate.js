@@ -49,17 +49,15 @@ var Homepage = function Homepage(props) {
                         'h1',
                         null,
                         'Mark\'s Homepage'
-                    ),
-                    React.createElement(
-                        'p',
-                        { className: 'text-muted' },
-                        React.createElement(
-                            'i',
-                            null,
-                            'Still figuring out what to put here...'
-                        )
                     )
                 )
+            ),
+            React.createElement(
+                'section',
+                { className: 'container text-center', style: {
+                        marginBottom: "20px"
+                    } },
+                React.createElement('iframe', { width: '853', height: '480', src: 'https://www.youtube.com/embed/XObXlm8oRR8', frameBorder: '0', allowFullScreen: true })
             ),
             React.createElement(CreationList, null),
             React.createElement(

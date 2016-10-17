@@ -26,8 +26,12 @@ const Homepage = (props) =>
                         width: '200px'
                     }} />
                     <h1>Mark's Homepage</h1>
-                    <p className="text-muted"><i>Still figuring out what to put here...</i></p>
                 </div>
+            </section>
+            <section className="container text-center" style={{
+                marginBottom: "20px"
+            }}>
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/XObXlm8oRR8" frameBorder="0" allowFullScreen ></iframe>
             </section>
             <CreationList />
             <footer style={{

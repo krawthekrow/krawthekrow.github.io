@@ -4,7 +4,6 @@ const listData = require('./creationListData');
 module.exports = (props) => {
     return (
         <section className="container" style={{maxWidth: '1000px'}}>
-            <h1 className="text-center">Stuff I've Made</h1>
             { listData.map((creation, id) =>
                 <div className="row" key={id}>
                     <div className="col-sm-4" style={{paddingTop: '20px'}}>
