@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Mark&#x27;s New Home</title>
+    <meta name="description" content="Mark&#x27;s Homepage" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossOrigin="anonymous" />
+    <style>
+        .social-btn {
+				color: #777;
+				margin: 0px 5px;
+			}
+			a {
+				color: #36c;
+			}
+		</style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light" style="margin-bottom:20px"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" style="justify-content:center;width:800px" id="navbarSupportedContent">
+            <div class="navbar-nav"><a class="nav-item nav-link" href="index.html">Home</a><a class="nav-item nav-link" href="cool-stuff.html">Cool Stuff</a><a class="nav-item nav-link active" href="subframe.html">Subframe</a><a class="nav-item nav-link" href="faq.html">FAQ</a></div>
+        </div>
+    </nav>
+    <section class="container" style="max-width:600px;padding:0px 35px">
+        <p><b>What&#x27;s subframe?</b> Subframe is an electronics design paradigm in <a href="https://powdertoy.co.uk/">The Powder Toy</a>, a falling-sand game from back when falling-sand games were still a thing. It exploits the way that the game updates particles to create very fast electronics. Here are some cool things that use subframe:</p>
+        <div class="card-group" style="margin-bottom:20px">
+            <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2046454"><img class="card-img-top" src="static/img/powder-toy/gpu.png" alt="SIMD16S" /></a>
+                <div class="card-body" style="padding:15px">
+                    <h5 class="card-title"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2046454">SIMD16S</a></h5>
+                    <p class="card-text">Primitive bitwise graphics card, enough to run Conway&#x27;s Game of Life.</p>
+                </div>
+            </div>
+            <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2305687"><img class="card-img-top" src="static/img/powder-toy/color-screen.png" alt="DISP56S" /></a>
+                <div class="card-body" style="padding:15px">
+                    <h5 class="card-title"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2305687">DISP56S</a></h5>
+                    <p class="card-text">Low-latency color screen for ~15Hz video.</p>
+                </div>
+            </div>
+            <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=1932845"><img class="card-img-top" src="static/img/powder-toy/r16k1s60.png" alt="R16K1S60" /></a>
+                <div class="card-body" style="padding:15px">
+                    <h5 class="card-title"><a href="https://powdertoy.co.uk/Browse/View.html?ID=1932845">R16K1S60</a></h5>
+                    <p class="card-text">The first subframe computer (by LBPHacker, not me).</p>
+                </div>
+            </div>
+        </div>
+        <p><b>Why subframe?</b> Subframe is a niche field and is full of unsolved problems. Optimizing a circuit to be as small as possible is like code golf in a very esoteric language. The results are often satisfying and fun to play with. What&#x27;s more, Powder Toy is free and open source.</p>
+        <p>Interestingly, subframe engineering has many parallels with real-life digital logic design. While all the particles update sequentially, geometric constraints and the way FILT works make it such that circuits have to be designed with parallelism in mind. In fact, the best subframe adders are <a href="https://robey.lag.net/2012/11/14/how-to-add-numbers-2.html">Kogge-Stone</a> adders, and the best subframe divider is a radix-2 <a href="https://en.wikipedia.org/wiki/Division_algorithm#SRT_division">SRT divider</a>.</p>
+        <p><b>Why not subframe?</b> Very few people still play The Powder Toy, so no one will know what you mean when you say &quot;subframe&quot;. Its physics is in no way realistic: memory access is immediate (though this may change with PHOT-stack-based memory), incrementers are O(1), and noise is never a problem. After a certain point, you don&#x27;t gain any transferrable skills.</p>
+        <p><b>How to subframe?</b> As with other things in The Powder Toy, the best way to learn is through reverse-engineering and experimentation. You could also come to <b>#powder-subframe</b> on Freenode IRC. Beyond that, here&#x27;s some material to help you get started.</p>
+        <div class="card-group" style="margin-bottom:20px">
+            <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2232626"><img class="card-img-top" src="static/img/powder-toy/sl101.png" alt="The Subframe Lessons" /></a>
+                <div class="card-body" style="padding:15px">
+                    <h5 class="card-title"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2232626">The Subframe Lessons</a></h5>
+                    <p class="card-text">A series of lessons explaining the basics of subframe and digital logic, starting from the very basics.</p>
+                </div>
+            </div>
+            <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2061643"><img class="card-img-top" src="static/img/powder-toy/incrementer-tutorial.png" alt="Incrementer Tutorial" /></a>
+                <div class="card-body" style="padding:15px">
+                    <h5 class="card-title"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2061643">Incrementer Tutorial</a></h5>
+                    <p class="card-text">A slightly outdated but advanced tutorial that walks you through creating a logarithmic incrementer.</p>
+                </div>
+            </div>
+            <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2170655"><img class="card-img-top" src="static/img/powder-toy/handbook.png" alt="The Subframe Handbook" /></a>
+                <div class="card-body" style="padding:15px">
+                    <h5 class="card-title"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2170655">The Subframe Handbook</a></h5>
+                    <p class="card-text">A collection of common circuits that you could use or reverse-engineer.</p>
+                </div>
+            </div>
+        </div>
+        <p>Once you&#x27;re sufficiently familiar with how things work, you could try using <a href="https://powdertoy.co.uk/Discussions/Thread/View.html?Thread=21251">my mod</a> for better productivity. As you might imagine, the game&#x27;s user interface wasn&#x27;t built with subframe development in mind.</p>
+        <p><b>What&#x27;s left to do?</b> The current published subframe computers and graphics chips use very old technology. Smaller and more powerful designs are possible. In fact, by my estimates, it should be possible to do things like play Pong, render interactive 3D graphics, and even run a rudimentary particle-based &quot;fluid simulation&quot; once the right hardware is developed.</p>
+        <p><b>Bonus!</b> It turns out that subframe-like machines exist in Minecraft too. Check out <a href="https://www.youtube.com/watch?v=uAy2FVYhUpY">this video</a> on fast piston transportation.</p>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossOrigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossOrigin="anonymous"></script>
+</body>
+
+</html>
