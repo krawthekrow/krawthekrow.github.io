@@ -17,7 +17,7 @@ const TptSave = (props) => {
 
 module.exports = (props) => {
 	return [
-		<section className="container" style={{
+		<div className="container" style={{
 			maxWidth: '600px',
 			padding: '0px 35px'
 		}}>
@@ -59,6 +59,6 @@ module.exports = (props) => {
 			<p>
 				<b>Bonus!</b> It turns out that subframe-like machines exist in Minecraft too. Check out <a href="https://www.youtube.com/watch?v=uAy2FVYhUpY">this video</a> on fast piston transportation.
 			</p>
-		</section>
+		</div>
 	];
 };

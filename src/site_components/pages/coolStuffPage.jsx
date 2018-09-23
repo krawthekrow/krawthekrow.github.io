@@ -5,7 +5,7 @@ const CreationList = require('../creations/creationList');
 module.exports = (props) => {
 	return [
 		<CreationList />,
-        <section className="container" style={{
+		<div className="container" style={{
 			maxWidth: '600px',
 			padding: '0px 35px'
 		}}>
@@ -19,9 +19,9 @@ module.exports = (props) => {
 				textAlign: 'center',
 				marginBottom: '30px'
 			}}>
-				<iframe width="500" height="282" src="https://www.youtube.com/embed/KdmdL-7tX0s" frameBorder="0" allowFullScreen ></iframe>
+				<iframe width="500" height="282" src="https://www.youtube.com/embed/KdmdL-7tX0s" allowFullScreen ></iframe>
 			</div>
-		</section>
+		</div>
 	];
 };
 

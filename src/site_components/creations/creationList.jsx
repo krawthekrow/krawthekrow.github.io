@@ -25,7 +25,7 @@ module.exports = (props) => {
 							</h2>
 							<div className="btn-group">
 								{ creation.buttons.map((btn, i) =>
-									<a href={btn.link} type="button" className={
+									<a href={btn.link} role="button" className={
 										`btn btn-lg ${(i == 0) ? 'btn-success' : 'btn-light'}`
 									} key={btn.text}>
 										{ btn.text }

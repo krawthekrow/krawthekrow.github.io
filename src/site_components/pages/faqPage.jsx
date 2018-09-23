@@ -2,7 +2,7 @@ const React = require('react');
 
 module.exports = (props) => {
 	return [
-		<section className="container" style={{
+		<div className="container" style={{
 			maxWidth: '500px',
 			padding: '0px 35px'
 		}}>
@@ -23,9 +23,9 @@ module.exports = (props) => {
 			</p>
 			<p>
 				<b>How do I solve the puzzle?</b> What puzzle?
-				<div dangerouslySetInnerHTML={{__html: '<!-- Just kidding, there isn\'t actually a puzzle. At least not now. :) -->'}}></div>
+				<span dangerouslySetInnerHTML={{__html: '<!-- Just kidding, there isn\'t actually a puzzle. At least not now. :) -->'}}></span>
 			</p>
-		</section>
+		</div>
 	];
 };
 

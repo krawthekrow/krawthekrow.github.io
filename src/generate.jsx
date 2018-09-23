@@ -90,7 +90,7 @@ const Homepage = (props) => {
 for (const page of PAGES) {
 	const markup = beautifyHTML(
 		('<!DOCTYPE html>' + render(<Homepage page={page}></Homepage>))
-		.replace('$_EMAIL_$', `<script type="text/javascript">
+		.replace('$_EMAIL_$', `<script>
 				document.write('<a href="mailt'+'o:krawt'+'hekrow@g'+'mail.com">Here it is</a>');
 			</script>`)
 		.replace('$_PAGE_STYLES_$',`
