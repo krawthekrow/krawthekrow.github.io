@@ -52,8 +52,8 @@ module.exports = [{
 	name: 'Virtuality',
 	image: 'virtuality.jpg',
 	buttons: [{
-		text: 'Game File',
-		link: 'static/files/creations/Virtuality.zblorb'
+		text: 'Play Online',
+		link: 'http://iplayif.com/?story=https://krawthekrow.github.io/static/files/creations/Virtuality.zblorb'
 	}, {
 		text:'IFDB',
 		link: 'http://ifdb.tads.org/viewgame?id=g1gno99dv2qbfxib'
@@ -61,7 +61,7 @@ module.exports = [{
 		text: 'Solution',
 		link: 'static/files/creations/virtuality-walkthrough.txt'
 	}],
-	description: 'An experimental interactive fiction game I made a billion years ago. I clearly didn\'t understand any game design principles then, but apparently I still had (at least, in my present opinion) a great sense of humor. You\'ll need something like <a href="https://github.com/garglk/garglk/releases">Gargoyle</a> ("sudo apt install gargoyle" on Linux) to play it.'
+	description: 'An experimental interactive fiction game I made a billion years ago. I clearly didn\'t understand any game design principles then, but apparently I still had (at least, in my present opinion) a great sense of humor. You can play it offline by loading the <a href="static/files/creations/Virtuality.zblorb">game file</a> into something like <a href="https://github.com/garglk/garglk/releases">Gargoyle</a> ("sudo apt install gargoyle" on Linux).'
 }];
 
 const UNINCLUDED_CREATIONS = [
