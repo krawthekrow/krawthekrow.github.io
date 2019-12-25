@@ -16,8 +16,7 @@ module.exports = (props) => {
 				I made a song! You can download it <a href="static/files/music/funtimes.mp3">here</a> or at <a href="https://soundcloud.com/user-176064693/fun-times">SoundCloud</a>. Here's a little video I made a while back that uses it.
 			</p>
 			<div style={{
-				textAlign: 'center',
-				marginBottom: '30px'
+				textAlign: 'center'
 			}}>
 				<iframe width="500" height="282" src="https://www.youtube.com/embed/KdmdL-7tX0s" allowFullScreen ></iframe>
 			</div>

@@ -4,7 +4,7 @@ module.exports = (props) => {
 	return [
 		<div className="container" style={{
 			maxWidth: '500px',
-			padding: '0px 35px'
+			padding: '0px 35px',
 		}}>
 			<p>
 				<b>Vanilla Bootstrap? Really?</b> Yeah. I'm a minimalist and I like the default design. (Well, almost. I did change a few things.) Why fix something that isn't broken?

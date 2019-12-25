@@ -23,17 +23,18 @@ module.exports = (props) => {
 					];
 					document.write(options[Math.floor(Math.random() * options.length)]);
 				`}}>
-				</script><noscript><span id="spell" dangerouslySetInnerHTML={{__html: MakeSpellDesc(SpellData[0])}}></span></noscript> Beyond that, I like computers, math, music, <a href="subframe.html">subframe technology</a> and pig intestines. Find me on <a href="https://github.com/krawthekrow">Github</a>, the wastelands of the <a href="https://krawthekrow.wordpress.com/">blogosphere</a>, or the venerable <a href="https://thirdwest.scripts.mit.edu/~thirdwest/wiki/index.php?title=User:Mtheng">floorpi wiki</a>. Welcome to my homepage!</p>
+				</script><noscript><span id="spell" dangerouslySetInnerHTML={{__html: MakeSpellDesc(SpellData[0])}}></span></noscript> Beyond that, I like computers, math, music, <a href="subframe.html">subframe technology</a> and pig intestines. Find me on <a href="https://github.com/krawthekrow">Github</a> or the venerable <a href="https://thirdwest.scripts.mit.edu/~thirdwest/wiki/index.php?title=User:Mtheng">floorpi wiki</a>. Welcome to my homepage!</p>
 				<span dangerouslySetInnerHTML={{__html: '<!-- No, I\'m not actually a Harry Potter fan. That was an inside joke. Actually this whole page is an inside joke. -->'}}></span>
 			</div>
 		</div>,
 		<div className="container" style={{
-			maxWidth: '500px',
-			marginBottom: '30px'
+			marginTop: '30px',
+			maxWidth: '500px'
 		}}>
 			<div className="card">
-				<div className="card-body">
-					<b>Hey you!</b> Yes, you! Do you like systems? Do you want MIT to have Nice Things? Then join <a href="http://hyades.mit.edu/">Hyades</a>, a SIPB cluster infrastructure project for next-generation student computing!
+				<div className="card-body text-center">
+					<p className="card-title"><b>I made a game!</b></p>
+					<p className="card-text">Play it <a href="flight-zc7796.html">here</a>.</p>
 				</div>
 			</div>
 		</div>
