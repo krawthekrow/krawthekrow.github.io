@@ -25,10 +25,10 @@ module.exports = (props) => {
 				margin: '30px 0px'
 			}}>
 				<div className="btn-group-vertical">
-					<a href="static/files/creations/flight_zc7796-1.0-pc.zip" role="button" className="btn btn-lg btn-info">
+					<a href="https://github.com/krawthekrow/flight-zc7796/releases/latest/download/flight_zc7796-1.0-pc.zip" role="button" className="btn btn-lg btn-info">
 						Download for Windows/Linux
 					</a>
-					<a href="static/files/creations/flight_zc7796-1.0-mac.zip" role="button" className="btn btn-lg btn-secondary">
+					<a href="https://github.com/krawthekrow/flight-zc7796/releases/latest/download/flight_zc7796-1.0-mac.zip" role="button" className="btn btn-lg btn-secondary">
 						Download for Mac
 					</a>
 				</div>
