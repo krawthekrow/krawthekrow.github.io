@@ -24,6 +24,7 @@ const PAGES = [{
 }, {
 	url: 'flight-zc7796',
 	title: 'Flight ZC7796',
+	desc: 'Flight ZC7796',
 	disableNavbar: true
 }];
 
@@ -80,7 +81,7 @@ const Homepage = (props) => {
 			<meta charSet="utf-8" />
 			<meta httpEquiv="x-ua-compatible" content="ie=edge" />
 			<title>{('title' in props.page) ? props.page.title : 'Mark\'s New Home'}</title>
-			<meta name="description" content="Mark's Homepage" />
+			<meta name="description" content={('desc' in props.page) ? props.page.desc : 'Mark\'s Homepage'} />
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 			<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossOrigin="anonymous" />
