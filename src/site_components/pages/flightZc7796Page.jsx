@@ -7,6 +7,7 @@ module.exports = (props) => {
 			padding: '0px'
 		}}>
 			<img src="static/img/flight-zc7796-banner.png" alt="Flight ZC7796" className="text-center" style={{
+				maxWidth: '100%'
 			}} />
 		</div>,
 		<div className="container" style={{
