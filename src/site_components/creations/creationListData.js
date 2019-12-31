@@ -34,7 +34,7 @@ module.exports = [{
 		link: 'https://github.com/krawthekrow/contourer'
 	}, {
 		text: 'Blog',
-		link: 'https://krawthekrow.wordpress.com/2016/07/26/needhams-complex-analysis-in-5-minutes/'
+		link: 'https://krawdump.wordpress.com/2016/07/26/needhams-complex-analysis-in-5-minutes/'
 	}],
 	description: 'A GPU-accelerated interactive visualization tool for mesh transformations, electric fields and complex analysis. Animate your own contour plots with just a little bit of code, or check out the ones in the demo. Browser-based and mobile-friendly, so no downloads required.'
 }, {
