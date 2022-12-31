@@ -1,93 +1,103 @@
-module.exports = [{
-	name: 'Flight ZC7796',
-	image: 'flight-zc7796.png',
-	buttons: [{
-		text: 'Play Now',
-		link: 'flight-zc7796.html'
-	}, {
-		text: 'Source Code',
-		link: 'https://github.com/krawthekrow/flight-zc7796'
-	}],
-	description: 'A visual novel about... flying in a commercial airliner. Yeah, it\'s the kind of game that\'s best played without knowing too much beforehand. But I think it\'s interesting, and people say it\'s fun, so <a href="flight-zc7796.html">go play it</a>! It only takes an hour or so.'
-}, {
-	name: 'Pi Connect',
-	image: 'pi-connect.png',
-	buttons: [{
-		text: 'App',
-		link: 'https://krawthekrow.github.io/pi-connect/'
-	}, {
-		text: 'Docs',
-		link: 'https://github.com/krawthekrow/pi-connect'
-	}, {
-		text: 'Write a Game',
-		link: 'https://github.com/krawthekrow/pi-connect-maker'
-	}],
-	description: 'Run your very own Only Connect! <a href="https://www.bbc.co.uk/programmes/b00lskhg">Only Connect</a> is a British quiz show about finding hidden connections between seemingly unrelated things. At some point <a href="https://thirdwest.scripts.mit.edu/~thirdwest/wiki/index.php?title=Only_Connect">Floor Pi</a> collectively got annoyed that the real Only Connect has too much British trivia and not enough puzzles, so this happened.'
-}, {
-	name: 'Contourer',
-	image: 'contourer.png',
-	buttons: [{
-		text: 'Demo',
-		link: 'https://krawthekrow.github.io/contourer/'
-	}, {
-		text: 'Source Code',
-		link: 'https://github.com/krawthekrow/contourer'
-	}, {
-		text: 'Blog',
-		link: 'https://krawdump.wordpress.com/2016/07/26/needhams-complex-analysis-in-5-minutes/'
-	}],
-	description: 'A GPU-accelerated interactive visualization tool for mesh transformations, electric fields and complex analysis. Animate your own contour plots with just a little bit of code, or check out the ones in the demo. Browser-based and mobile-friendly, so no downloads required.'
-}, {
-	name: 'Real-Time SPH',
-	image: 'real-time-sph.png',
-	buttons: [{
-		text: 'Video',
-		link: 'https://www.youtube.com/watch?v=OTSuqxK--3Y&feature=youtu.be'
-	}, {
-		text: 'Source Code',
-		link: 'https://github.com/krawthekrow/real-time-sph'
-	}, {
-		text: 'Docs',
-		link: 'https://github.com/krawthekrow/real-time-sph/blob/master/doc/writeup.pdf'
-	}],
-	description: 'Real-time fluid simulation and rendering on the GPU. Unlike traditional real-time fluid sims, this uses smoothed-particle hydrodynamics, which has its own set of advantages and disadvantages. I made this for my final project in computer graphics, but really I just wanted an excuse to try CUDA.'
-}, {
-	name: 'LightPC',
-	image: 'lightpc.jpg',
-	buttons: [{
-		text: 'Demo',
-		link: 'http://powdertoy.co.uk/Browse/View.html?ID=1570768'
-	}, {
-		text: 'Compiler',
-		link: 'static/files/creations/lightpc-compiler.py'
-	}, {
-		text: 'Docs',
-		link: 'static/files/creations/lightpc-resources.zip'
-	}],
-	description: 'It\'s a computer in The Powder Toy, a falling-sand game from the previous decade. Today, this is mostly outdated due to the advent of subframe technology (check out <a href="subframe.html">my page on subframe</a>!). Also, I made a neat <a href="static/files/creations/lightpc-timelapse.gif">timelapse</a> of me making it, which is probably the coolest part of this, really.'
-}, {
-	name: 'Fourier Transformer',
-	image: 'fouriertransform.jpg',
-	buttons: [{
-		text: 'SWF File',
-		link: 'static/files/creations/fouriertransform.swf'
-	}],
-	description: 'Built back in the day when Flash was still a thing, this tool illustrates how a function can be decomposed into sinusoids through the <span style="text-decoration: line-through;">Fourier</span> Discrete Cosine Transform. Use the mouse to draw a function, then hold down the spacebar to reconstruct it from sinusoids. Press "Z" to view the spectrum and "R" to reset.'
-}, {
-	name: 'Virtuality',
-	image: 'virtuality.jpg',
-	buttons: [{
-		text: 'Play Online',
-		link: 'http://iplayif.com/?story=https://krawthekrow.github.io/static/files/creations/Virtuality.zblorb'
-	}, {
-		text:'IFDB',
-		link: 'http://ifdb.tads.org/viewgame?id=g1gno99dv2qbfxib'
-	}, {
-		text: 'Solution',
-		link: 'static/files/creations/virtuality-walkthrough.txt'
-	}],
-	description: 'An experimental interactive fiction game I made a billion years ago. I clearly didn\'t understand any game design principles then, but apparently I still had (at least, in my present opinion) a great sense of humor. You can play it offline by loading the <a href="static/files/creations/Virtuality.zblorb">game file</a> into something like <a href="https://github.com/garglk/garglk/releases">Gargoyle</a> ("sudo apt install gargoyle" on Linux).'
-}];
+module.exports = {
+	'flight-zc7796': {
+		name: 'Flight ZC7796',
+		image: 'flight-zc7796.png',
+		buttons: [{
+			text: 'Play Now',
+			link: 'flight-zc7796.html'
+		}, {
+			text: 'Source Code',
+			link: 'https://github.com/krawthekrow/flight-zc7796'
+		}],
+		description: 'A visual novel about... flying in a commercial airliner. Yeah, it\'s the kind of game that\'s best played without knowing too much beforehand. But I think it\'s interesting, and people say it\'s fun, so <a href="flight-zc7796.html">go play it</a>! It only takes an hour or so.'
+	},
+	'pi-connect': {
+		name: 'Pi Connect',
+		image: 'pi-connect.png',
+		buttons: [{
+			text: 'App',
+			link: 'https://krawthekrow.github.io/pi-connect/'
+		}, {
+			text: 'Docs',
+			link: 'https://github.com/krawthekrow/pi-connect'
+		}, {
+			text: 'Write a Game',
+			link: 'https://github.com/krawthekrow/pi-connect-maker'
+		}],
+		description: 'Run your very own Only Connect! <a href="https://www.bbc.co.uk/programmes/b00lskhg">Only Connect</a> is a British quiz show about finding hidden connections between seemingly unrelated things. At some point <a href="https://thirdwest.scripts.mit.edu/~thirdwest/wiki/index.php?title=Only_Connect">Floor Pi</a> collectively got annoyed that the real Only Connect has too much British trivia and not enough puzzles, so this happened.'
+	},
+	'contourer': {
+		name: 'Contourer',
+		image: 'contourer.png',
+		buttons: [{
+			text: 'Demo',
+			link: 'https://krawthekrow.github.io/contourer/'
+		}, {
+			text: 'Source Code',
+			link: 'https://github.com/krawthekrow/contourer'
+		},
+		// {
+		// 	text: 'Blog',
+		// 	link: 'https://krawdump.wordpress.com/2016/07/26/needhams-complex-analysis-in-5-minutes/'
+		// }
+		],
+		description: 'A GPU-accelerated interactive visualization tool for mesh transformations, electric fields and complex analysis. Animate your own contour plots with just a little bit of code, or check out the ones in the demo. Browser-based and mobile-friendly, so no downloads required.'
+	},
+	'real-time-sph': {
+		name: 'Real-Time SPH',
+		image: 'real-time-sph.png',
+		buttons: [{
+			text: 'Video',
+			link: 'https://www.youtube.com/watch?v=OTSuqxK--3Y&feature=youtu.be'
+		}, {
+			text: 'Source Code',
+			link: 'https://github.com/krawthekrow/real-time-sph'
+		}, {
+			text: 'Docs',
+			link: 'https://github.com/krawthekrow/real-time-sph/blob/master/doc/writeup.pdf'
+		}],
+		description: 'Real-time fluid simulation and rendering on the GPU. Unlike traditional real-time fluid sims, this uses smoothed-particle hydrodynamics, which has its own set of advantages and disadvantages. I made this for my final project in computer graphics, but really I just wanted an excuse to try CUDA.'
+	},
+	'lightpc': {
+		name: 'LightPC',
+		image: 'lightpc.jpg',
+		buttons: [{
+			text: 'Demo',
+			link: 'http://powdertoy.co.uk/Browse/View.html?ID=1570768'
+		}, {
+			text: 'Compiler',
+			link: 'static/files/creations/lightpc-compiler.py'
+		}, {
+			text: 'Docs',
+			link: 'static/files/creations/lightpc-resources.zip'
+		}],
+		description: 'It\'s a computer in The Powder Toy, a falling-sand game from the previous decade. Today, this is mostly outdated due to the advent of subframe technology (check out <a href="subframe.html">my page on subframe</a>!). Also, I made a neat <a href="static/files/creations/lightpc-timelapse.gif">timelapse</a> of me making it, which is probably the coolest part of this, really.'
+	},
+	'fourier-transform': {
+		name: 'Fourier Transformer',
+		image: 'fouriertransform.jpg',
+		buttons: [{
+			text: 'SWF File',
+			link: 'static/files/creations/fouriertransform.swf'
+		}],
+		description: 'Built back in the day when Flash was still a thing, this tool illustrates how a function can be decomposed into sinusoids through the <span style="text-decoration: line-through;">Fourier</span> Discrete Cosine Transform. Use the mouse to draw a function, then hold down the spacebar to reconstruct it from sinusoids. Press "Z" to view the spectrum and "R" to reset.'
+	},
+	'virtuality': {
+		name: 'Virtuality',
+		image: 'virtuality.jpg',
+		buttons: [{
+			text: 'Play Online',
+			link: 'http://iplayif.com/?story=https://krawthekrow.github.io/static/files/creations/Virtuality.zblorb'
+		}, {
+			text:'IFDB',
+			link: 'http://ifdb.tads.org/viewgame?id=g1gno99dv2qbfxib'
+		}, {
+			text: 'Solution',
+			link: 'static/files/creations/virtuality-walkthrough.txt'
+		}],
+		description: 'An experimental interactive fiction game I made a billion years ago. I clearly didn\'t understand any game design principles then, but apparently I still had (at least, in my present opinion) a great sense of humor. You can play it offline by loading the <a href="static/files/creations/Virtuality.zblorb">game file</a> into something like <a href="https://github.com/garglk/garglk/releases">Gargoyle</a> ("sudo apt install gargoyle" on Linux).'
+	},
+};
 
 const UNINCLUDED_CREATIONS = [
 {

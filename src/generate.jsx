@@ -4,7 +4,8 @@ const render = require('react-dom/server').renderToStaticMarkup;
 const beautifyHTML = require('js-beautify').html;
 
 const MainPage = require('./site_components/pages/mainPage');
-const CoolStuffPage = require('./site_components/pages/coolStuffPage');
+const StuffPage = require('./site_components/pages/stuffPage');
+const PuzzlesPage = require('./site_components/pages/puzzlesPage');
 const SubframePage = require('./site_components/pages/subframePage');
 const FaqPage = require('./site_components/pages/faqPage');
 const FlightZc7796Page = require('./site_components/pages/flightZc7796Page');
@@ -13,11 +14,14 @@ const PAGES = [{
 	url: 'index',
 	navbarName: 'Home'
 }, {
-	url: 'cool-stuff',
-	navbarName: 'Cool Stuff'
+	url: 'puzzles', 
+	navbarName: 'Puzzles'
 }, {
 	url: 'subframe', 
 	navbarName: 'Subframe'
+}, {
+	url: 'stuff',
+	navbarName: 'Other Stuff'
 }, {
 	url: 'faq',
 	navbarName: 'FAQ'
@@ -34,8 +38,10 @@ const PageContents = (props) => {
 	switch (props.page.url) {
 	case 'index':
 		return <MainPage />;
-	case 'cool-stuff':
-		return <CoolStuffPage />;
+	case 'stuff':
+		return <StuffPage />;
+	case 'puzzles':
+		return <PuzzlesPage />;
 	case 'subframe':
 		return <SubframePage />;
 	case 'faq':
@@ -62,6 +68,7 @@ const Navbar = (props) => {
 			<div className="navbar-nav">
 				{ NAVBAR_PAGES.map((page) =>
 					<a className={
+						`mx-2 ` +
 						`nav-item nav-link${(page.url == props.url) ? ' active' : ''}`
 					} href={page.url + '.html'} key={page.url}>
 						{ page.navbarName }
@@ -113,7 +120,7 @@ for (const page of PAGES) {
 		.replace('$_PAGE_JAVASCRIPT_$',`
 		`));
 
-	fs.writeFile(page.url + '.html', markup, err => {
+	fs.writeFile(`docs/${page.url}.html`, markup, err => {
 		if(err){
 			console.log(err);
 		}

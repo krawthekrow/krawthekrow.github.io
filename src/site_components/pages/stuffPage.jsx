@@ -3,8 +3,8 @@ const React = require('react');
 const CreationList = require('../creations/creationList');
 
 module.exports = (props) => {
-	return [
-		<CreationList />,
+	return <>
+		<CreationList />
 		<div className="container" style={{
 			maxWidth: '600px',
 			padding: '0px 35px'
@@ -21,6 +21,6 @@ module.exports = (props) => {
 				<iframe width="500" height="282" src="https://www.youtube.com/embed/KdmdL-7tX0s" allowFullScreen ></iframe>
 			</div>
 		</div>
-	];
+	</>;
 };
 
