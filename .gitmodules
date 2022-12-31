@@ -1,0 +1,3 @@
+[submodule "docs/static"]
+	path = docs/static
+	url = git@github.com:krawthekrow/static.git
