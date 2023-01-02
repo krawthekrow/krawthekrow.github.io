@@ -37,7 +37,7 @@ const BigCreation = (props) => {
 		creation.buttons[0].link;
 	return <div className="row mt-3">
 		<div className="col-sm-4 d-flex align-items-center">
-			<a href={link}>
+			<a className="w-100" href={link}>
 				<img
 					src={`static/img/creations/${creation.image}`}
 					alt={creation.name}
@@ -46,7 +46,7 @@ const BigCreation = (props) => {
 			</a>
 		</div>
 		<div className="col-sm-8 d-flex align-items-center">
-			<p className="mb-0">
+			<p className="my-2">
 				<b><a href={link}>{ creation.name }</a></b>.{' '}
 				<span
 					dangerouslySetInnerHTML={{__html: creation.description}}
