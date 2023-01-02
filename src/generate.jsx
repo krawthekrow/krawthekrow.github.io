@@ -14,16 +14,20 @@ const PAGES = [{
 	url: 'index',
 	navbarName: 'Home'
 }, {
+	url: 'stuff',
+	title: 'Mark\'s Stuff',
+	navbarName: 'Stuff I Made'
+}, {
 	url: 'puzzles', 
+	title: 'Puzzles',
 	navbarName: 'Puzzles'
 }, {
 	url: 'subframe', 
+	title: 'Subframe',
 	navbarName: 'Subframe'
 }, {
-	url: 'stuff',
-	navbarName: 'Other Stuff'
-}, {
 	url: 'faq',
+	title: 'FAQ',
 	navbarName: 'FAQ'
 }, {
 	url: 'flight-zc7796',
@@ -87,7 +91,7 @@ const Homepage = (props) => {
 		<head>
 			<meta charSet="utf-8" />
 			<meta httpEquiv="x-ua-compatible" content="ie=edge" />
-			<title>{('title' in props.page) ? props.page.title : 'Mark\'s New Home'}</title>
+			<title>{('title' in props.page) ? props.page.title : 'Mark\'s Homepage'}</title>
 			<meta name="description" content={('desc' in props.page) ? props.page.desc : 'Mark\'s Homepage'} />
 			<meta name="viewport" content="width=device-width, initial-scale=1" />
 			<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -111,6 +115,9 @@ for (const page of PAGES) {
 		('<!DOCTYPE html>' + render(<Homepage page={page}></Homepage>))
 		.replace('$_EMAIL_$', `<script>
 				document.write('<a href="mailt'+'o:krawt'+'hekrow@g'+'mail.com">Here it is</a>');
+			</script>`)
+		.replace('$_SUBFRAME_DISCORD_$', `<script>
+				document.write('<a href="htt'+'ps://dis'+'cord.g'+'g/fj'+'F24'+'Hc">subframe discord server</a>');
 			</script>`)
 		.replace('$_PAGE_STYLES_$',`
 			a {

@@ -1,50 +1,114 @@
 const React = require('react');
 const listData = require('./creationListData');
 
-const highlightCreations = [
+const mainCreations = [
+	'subframe-mod',
 	'pi-connect',
+	'burkinator',
 	'contourer',
+	'yweiyst',
 ];
+
+const collegeCreations = [
+	'flight-zc7796',
+	'real-time-sph',
+];
+
+const musicCreations = [
+	'absolute-music',
+	'dragonfly-dance',
+	'fun-times',
+	'track-2020-05',
+	'track-2022-01',
+];
+
+const ancientCreations = [
+	'lightpc',
+	'virtuality',
+	'fourier-transform',
+	'train-game',
+	'laser-game',
+	'stickman-animation',
+];
+
+const BigCreation = (props) => {
+	const creation = listData[props.id];
+	const link = (creation.link != undefined) ? creation.link :
+		creation.buttons[0].link;
+	return <div className="row mt-3">
+		<div className="col-sm-4 d-flex align-items-center">
+			<a href={link}>
+				<img
+					src={`static/img/creations/${creation.image}`}
+					alt={creation.name}
+					className="w-100"
+				/>
+			</a>
+		</div>
+		<div className="col-sm-8 d-flex align-items-center">
+			<p className="mb-0">
+				<b><a href={link}>{ creation.name }</a></b>.{' '}
+				<span
+					dangerouslySetInnerHTML={{__html: creation.description}}
+				/>
+			</p>
+		</div>
+	</div>;
+};
+
+const SmallCreation = (props) => {
+	const creation = listData[props.id];
+	const link = (creation.link != undefined) ? creation.link :
+		creation.buttons[0].link;
+	return <div className="row">
+		<div className="col-sm-12">
+			<p className="my-2">
+				<b><a href={link}>{ creation.name }</a></b>.{' '}
+				<span
+					dangerouslySetInnerHTML={{__html: creation.description}}
+				/>
+			</p>
+		</div>
+	</div>;
+};
 
 module.exports = (props) => {
 	return <section className="container" style={{
-		maxWidth: '600px',
-		padding: '0px 50px'
+		maxWidth: '720px',
 	}}>
-		{ highlightCreations.map((id) => {
-			const creation = listData[id];
-			return <div className="row" key={id} style={{
-			}}>
-				<div className="row mt-4">
-					<div className="col-sm-4" style={{
-					}}>
-						<img src={`static/img/creations/${creation.image}`} alt={creation.name} style={{width: '100%'}} />
-					</div>
-					<div className="col-sm-8 d-flex align-items-center" style={{
-					}}>
-						<div>
-							<h3>
-								{ creation.name }
-							</h3>
-							<div className="btn-group">
-								{ creation.buttons.map((btn, i) =>
-									<a href={btn.link} role="button" className={
-										`btn ${(i == 0) ? 'btn-success' : 'btn-light'}`
-									} key={btn.text}>
-										{ btn.text }
-									</a>) }
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="row">
-					<div className="col" style={{
-						marginTop: '20px'
-					}}>
-						<p dangerouslySetInnerHTML={{__html: creation.description}}></p>
-					</div>
-				</div>
-			</div>;
+		<div className="text-center mb-4">
+			<h2>Fun stuff</h2>
+			<div>that you might even potentially find useful</div>
+		</div>
+		{ mainCreations.map((id) => {
+			return <BigCreation id={id} key={id} />;
+		}) }
+		<div className="text-center mt-5 mb-4">
+			<h2 id="music">Music stuff</h2>
+			<div>that... I mean, it's just music, maybe it's worth a listen</div>
+		</div>
+		{ musicCreations.map((id) => {
+			return <SmallCreation id={id} key={id} />;
+		}) }
+		<div className="text-center mt-5 mb-4">
+			<h2>College stuff</h2>
+			<div>that I inexplicably still think is pretty cool</div>
+		</div>
+		{ collegeCreations.map((id) => {
+			return <BigCreation id={id} key={id} />;
+		}) }
+		<div className="text-center mt-5 mb-4">
+			<h2>Ancient stuff</h2>
+			<div>that I'm almost too embarrassed to publish here</div>
+			<div><small>
+				but will anyway because they hold some amount of sentimental value to me
+			</small></div>
+			<div><small style={{fontSize: '50%'}}>
+				and besides this is not a resume and who said you can only put things you're unabashedly proud of on your homepage anyway?
+			</small></div>
+		</div>
+		{ ancientCreations.map((id) => {
+			return <SmallCreation id={id} key={id} />;
 		}) }
 	</section>;
 };

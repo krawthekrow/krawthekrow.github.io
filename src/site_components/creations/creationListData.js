@@ -1,4 +1,22 @@
 module.exports = {
+	'subframe-mod': {
+		name: 'The Subframe Mod',
+		image: 'subframe.png',
+		link: 'https://powdertoy.co.uk/Discussions/Thread/View.html?Thread=21251',
+		description: 'Whether you\'re an aspiring beginner or an APOM-slinging expert, this mod of <a href="https://powdertoy.co.uk/">The Powder Toy</a> (or <a href="https://powdertoy.co.uk/Discussions/Thread/View.html?Thread=25877">Maticzpl\'s Lua port</a>) is a must-have for subframe development. See my <a href="subframe.html">subframe technology page</a> to learn more about the peculiar world of subframe engineering.',
+	},
+	'burkinator': {
+		name: 'The Burkinator',
+		image: 'burkinator.png',
+		link: 'https://krawthekrow.github.io/burkinator/',
+		description: 'Puzzling tool for plotting points and geodesics, named after the infamous <a href="https://puzzles.mit.edu/2019/puzzle/first_you_visit_burkina_faso.html">Mystery Hunt map-grinding puzzle</a>. Only after making it did I learn that <a href="https://mymaps.google.com/">Google My Maps</a> already has most of the same functionality. Disclaimer: I have not actually attempted First You Visit Burkina Faso.',
+	},
+	'yweiyst': {
+		name: 'You Will Explode If You Stop Talking',
+		image: 'yweiyst.png',
+		link: 'https://yweiyst.github.io/',
+		description: 'A short game that CJ and I made for the <a href="https://puzzles.mit.edu/2021/">2021 Mystery Hunt</a>. Inspired by, but not affliated with, <a href="https://keeptalkinggame.com/">Keep Talking and Nobody Explodes</a>. If you liked the original, give this one a go! You\'ll need at least four players, and don\'t need to know anything about the Hunt to enjoy it.'
+	},
 	'flight-zc7796': {
 		name: 'Flight ZC7796',
 		image: 'flight-zc7796.png',
@@ -9,7 +27,7 @@ module.exports = {
 			text: 'Source Code',
 			link: 'https://github.com/krawthekrow/flight-zc7796'
 		}],
-		description: 'A visual novel about... flying in a commercial airliner. Yeah, it\'s the kind of game that\'s best played without knowing too much beforehand. But I think it\'s interesting, and people say it\'s fun, so <a href="flight-zc7796.html">go play it</a>! It only takes an hour or so.'
+		description: 'A visual novel about... flying in a commercial airliner. Yeah, it\'s the kind of game that\'s best played without knowing too much beforehand. It\'s my most intense artistic endeavor to date, so <a href="flight-zc7796.html">go play it</a> if you haven\'t already! It only takes an hour or so.'
 	},
 	'pi-connect': {
 		name: 'Pi Connect',
@@ -24,7 +42,7 @@ module.exports = {
 			text: 'Write a Game',
 			link: 'https://github.com/krawthekrow/pi-connect-maker'
 		}],
-		description: 'Run your very own Only Connect! <a href="https://www.bbc.co.uk/programmes/b00lskhg">Only Connect</a> is a British quiz show about finding hidden connections between seemingly unrelated things. At some point <a href="https://thirdwest.scripts.mit.edu/~thirdwest/wiki/index.php?title=Only_Connect">Floor Pi</a> collectively got annoyed that the real Only Connect has too much British trivia and not enough puzzles, so this happened.'
+		description: 'Run your very own <a href="https://www.bbc.co.uk/programmes/b00lskhg">Only Connect</a>! Only Connect is a British quiz show about finding hidden connections between seemingly unrelated things. At some point <a href="https://thirdwest.scripts.mit.edu/~thirdwest/wiki/index.php?title=Only_Connect">Floor Pi</a> collectively got annoyed that the real Only Connect has too much British trivia and not enough puzzly content, so this happened.'
 	},
 	'contourer': {
 		name: 'Contourer',
@@ -36,19 +54,20 @@ module.exports = {
 			text: 'Source Code',
 			link: 'https://github.com/krawthekrow/contourer'
 		},
-		// {
-		// 	text: 'Blog',
-		// 	link: 'https://krawdump.wordpress.com/2016/07/26/needhams-complex-analysis-in-5-minutes/'
-		// }
+		{
+			text: 'Blog',
+			link: 'https://krawdump.wordpress.com/2016/07/26/needhams-complex-analysis-in-5-minutes/'
+		}
 		],
 		description: 'A GPU-accelerated interactive visualization tool for mesh transformations, electric fields and complex analysis. Animate your own contour plots with just a little bit of code, or check out the ones in the demo. Browser-based and mobile-friendly, so no downloads required.'
 	},
 	'real-time-sph': {
 		name: 'Real-Time SPH',
 		image: 'real-time-sph.png',
+		link: 'https://github.com/krawthekrow/real-time-sph',
 		buttons: [{
 			text: 'Video',
-			link: 'https://www.youtube.com/watch?v=OTSuqxK--3Y&feature=youtu.be'
+			link: 'https://www.youtube.com/watch?v=OTSuqxK--3Y'
 		}, {
 			text: 'Source Code',
 			link: 'https://github.com/krawthekrow/real-time-sph'
@@ -56,11 +75,17 @@ module.exports = {
 			text: 'Docs',
 			link: 'https://github.com/krawthekrow/real-time-sph/blob/master/doc/writeup.pdf'
 		}],
-		description: 'Real-time fluid simulation and rendering on the GPU. Unlike traditional real-time fluid sims, this uses smoothed-particle hydrodynamics, which has its own set of advantages and disadvantages. I made this for my final project in computer graphics, but really I just wanted an excuse to try CUDA.'
+		description: 'Real-time fluid simulation and rendering based on smoothed-particle hydrodynamics. See the <a href="https://www.youtube.com/watch?v=OTSuqxK--3Y">demo video</a>. It was my first time really trying to do anything with CUDA, so I\'m pretty happy with how it turned out. In case you haven\'t noticed, I like GPUs :P'
+	},
+	'fun-times': {
+		name: 'Fun Times',
+		link: 'static/files/music/funtimes.mp3',
+		description: 'The first track I made when I learned how to use a synthesizer. It\'s kinda cheesy but, I think, not in a bad way.'
 	},
 	'lightpc': {
 		name: 'LightPC',
 		image: 'lightpc.jpg',
+		link: 'https://powdertoy.co.uk/Discussions/Thread/View.html?Thread=18937',
 		buttons: [{
 			text: 'Demo',
 			link: 'http://powdertoy.co.uk/Browse/View.html?ID=1570768'
@@ -71,7 +96,7 @@ module.exports = {
 			text: 'Docs',
 			link: 'static/files/creations/lightpc-resources.zip'
 		}],
-		description: 'It\'s a computer in The Powder Toy, a falling-sand game from the previous decade. Today, this is mostly outdated due to the advent of subframe technology (check out <a href="subframe.html">my page on subframe</a>!). Also, I made a neat <a href="static/files/creations/lightpc-timelapse.gif">timelapse</a> of me making it, which is probably the coolest part of this, really.'
+		description: '<a href="static/files/creations/lightpc-resources.zip">(docs)</a> <a href="static/files/creations/lightpc-compiler.py">(compiler)</a> A FILT-based computer in <a href="https://powdertoy.co.uk/">The Powder Toy</a>. This was from before the advent of <a href="subframe.html">subframe technology</a>, so it\'s horribly slow and outdated. The <a href="static/files/creations/lightpc-timelapse.gif">construction timelapse</a>, though, will never stop being fun to watch.'
 	},
 	'fourier-transform': {
 		name: 'Fourier Transformer',
@@ -80,7 +105,7 @@ module.exports = {
 			text: 'SWF File',
 			link: 'static/files/creations/fouriertransform.swf'
 		}],
-		description: 'Built back in the day when Flash was still a thing, this tool illustrates how a function can be decomposed into sinusoids through the <span style="text-decoration: line-through;">Fourier</span> Discrete Cosine Transform. Use the mouse to draw a function, then hold down the spacebar to reconstruct it from sinusoids. Press "Z" to view the spectrum and "R" to reset.'
+		description: 'Built back when Flash was still a thing, this tool illustrates how a function can be decomposed into sinusoids through the <span style="text-decoration: line-through;">Fourier</span> Discrete Cosine Transform. Draw a function with the mouse, then hold down the spacebar to reconstruct it from sinusoids. Press "Z" to view the spectrum and "R" to reset.'
 	},
 	'virtuality': {
 		name: 'Virtuality',
@@ -95,7 +120,51 @@ module.exports = {
 			text: 'Solution',
 			link: 'static/files/creations/virtuality-walkthrough.txt'
 		}],
-		description: 'An experimental interactive fiction game I made a billion years ago. I clearly didn\'t understand any game design principles then, but apparently I still had (at least, in my present opinion) a great sense of humor. You can play it offline by loading the <a href="static/files/creations/Virtuality.zblorb">game file</a> into something like <a href="https://github.com/garglk/garglk/releases">Gargoyle</a> ("sudo apt install gargoyle" on Linux).'
+		description: '<a href="static/files/creations/virtuality-walkthrough.txt">(solution)</a> <a href="http://ifdb.tads.org/viewgame?id=g1gno99dv2qbfxib">(IFDB)</a> An interactive fiction game I made long before I knew that playtesting was something people did. The puzzles are terrible but the writing still seems to hold up, I think. You can play it online <a href="http://iplayif.com/?story=https://krawthekrow.github.io/static/files/creations/Virtuality.zblorb">here</a> or offline by loading the <a href="static/files/creations/Virtuality.zblorb">game file</a> into something like <a href="https://github.com/garglk/garglk/releases">Gargoyle</a> ("sudo apt install gargoyle" on Linux).'
+	},
+	'train-game': {
+		'name': 'Train Game',
+		'image': 'traingame.jpg',
+		'link': 'static/files/creations/train-game.exe',
+		'description': 'An interactive fiction with a train in it. It\'s incomplete, unexciting, and atrociously coded, but it\'ll always have a special place in my heart as my very first real program. To my dismay, it seems that the source code has been lost to time. I\'m not going to let the <a href="static/files/creations/train-game.exe">binary</a> go missing as well.',
+		'production_period': 'Early 2009',
+		'status': 'Abandoned'
+	},
+	'laser-game': {
+		'name': 'Laser Game',
+		'image': 'lasergame.jpg',
+		'link': 'static/files/creations/laser-game.ppt',
+		'description': 'It\'s an incomplete puzzle game from when I was so young that I thought all point-and-click games were made with PowerPoint. I was wrong. Ultimately, the combinatorial explosion in the number of slides required for the last level was what killed the project. Anyway, here\'s the very first interactive thing I made.',
+		'production_period': 'Late 2008',
+		'status': 'Abandoned'
+	},
+	'stickman-animation': {
+		'name': 'The Adventures of A. Stickman',
+		'image': 'stickmananimation.jpg',
+		'link': 'static/files/creations/stickman-animation.ppt',
+		'description': 'And here\'s the very first, uhm, shareable thing I made. It\'s a PowerPoint "animation" about a stickman attempting to get past a tree.',
+		'production_period': 'Late 2008',
+		'status': 'Finished'
+	},
+	'absolute-music': {
+		name: '"Absolute Music"',
+		link: 'static/files/music/absolute-music.mp3',
+		description: '<a href="static/files/music/absolute-music.pdf">(score)</a> We were assigned to write a theme and variations for a final class project. I may have taken the idea of "variations" a little more romantically than the class intended, but I\'m pleased with how it turned out. Link is to the MuseScore rendering.'
+	},
+	'dragonfly-dance': {
+		name: 'Dragonfly Dance',
+		link: 'static/files/music/dragonfly-dance-musescore.mp3',
+		description: '<a href="static/files/music/dragonfly-dance.pdf">(score)</a> This was for the rag class final project, but I\'m happy about it even out of context. Link is to the MuseScore rendering. There\'s also a recording <a href="static/files/music/dragonfly-dance.mp3">here</a> sight-read by the class professor, Charles Shadle.'
+	},
+	'track-2020-05': {
+		name: 'track-2020-05',
+		link: 'static/files/music/track-2020-05.mp3',
+		description: 'More recently, I\'ve been trying to make tracks with only synthetic instruments. Here\'s a floaty loop I ended up with while experimenting with the 3-3-2 rhythmic pattern.'
+	},
+	'track-2022-01': {
+		name: 'track-2022-01',
+		link: 'static/files/music/track-2022-01.mp3',
+		description: 'Here\'s a more complete track that I wrote one particularly inspired day. I think I got the instruments to sound a little better in this one.'
 	},
 };
 
@@ -121,16 +190,6 @@ const UNINCLUDED_CREATIONS = [
 	'status': 'Unfinished'
 },
 {
-	'id': '4',
-	'sequence': '4',
-	'name': 'Fourier Transform',
-	'image': 'fouriertransform.jpg',
-	'link': '/static/files/fouriertransform.swf',
-	'description': 'Probably my only useful creation, this Flash animation was created to illustrate the concept that any function can be decomposed into a sum of sine waves through the Fourier transform. Use the mouse to draw a function, then press spacebar repeatedly to find the fourier coefficients. Hold it down to accelerate. Press "Z" to view the spectrum and "R" to reset.',
-	'production_period': 'Mid 2013',
-	'status': 'Finished'
-},
-{
 	'id': '5',
 	'sequence': '5',
 	'name': 'Autograder',
@@ -145,7 +204,7 @@ const UNINCLUDED_CREATIONS = [
 	'sequence': '6',
 	'name': 'Vector RTS',
 	'image': 'vectorrts.jpg',
-	'link': '/static/files/vectorrts.swf',
+	'link': 'static/files/creations/vectorrts.swf',
 	'description': 'What was originally intended to be a very simple game turned into an experiment in simulating group behaviour when I found that the movement mechanism was too slow for use in a game (in hindsight, I believe the lag is caused by garbage collection cycles). Since this was supposed to be part of a game, a lot of work was put into ensuring its aesthetic appeal. Hold the "Z" button to select troops, then click anywhere to send them.',
 	'production_period': 'Mid 2013',
 	'status': 'Unfinished'
@@ -179,34 +238,4 @@ const UNINCLUDED_CREATIONS = [
 	'description': 'I always liked impersonating adults, so you can\'t blame me for submitting a game for a game competition just a year after I learnt to program. Inform 7 was made to allow people to write games without programming knowledge, but my undiscriminating use of functions and variables made the natural language interface become more of a hinderance than a help. Every time I replay this game, the humour amazes me, given that I wrote it when I was still young.',
 	'production_period': 'Early 2010',
 	'status': 'Finished'
-},
-{
-	'id': '10',
-	'sequence': '10',
-	'name': 'Train Game',
-	'image': 'traingame.jpg',
-	'link': '',
-	'description': 'When I was first exposed to C++, the first thing I did was make an interactive fiction game. Looking at it now, it\'s unnecessarily recursive and is the worst code I\'ve ever written, but it is after all my very first real program. It is, of course, incomplete.',
-	'production_period': 'Early 2009',
-	'status': 'Abandoned'
-},
-{
-	'id': '11',
-	'sequence': '11',
-	'name': 'The Adventures of A. Stickman',
-	'image': 'stickmananimation.jpg',
-	'link': '/static/files/stickmananimation.ppt',
-	'description': 'My first attempts at animation was with Powerpoint. This short "film" tells a story of a stickman attempting to get past a tree.',
-	'production_period': 'Late 2008',
-	'status': 'Finished'
-},
-{
-	'id': '12',
-	'sequence': '12',
-	'name': 'Laser Game',
-	'image': 'lasergame.jpg',
-	'link': '/static/files/lasergame.ppt',
-	'description': 'When I was very young, I thought that all online games were made with Powerpoint (the observant reader would know that they are in fact made with Flash). I tried to make a very simple puzzle game with Powerpoint then, but at the last level got overwhelmed by the sheer number of slides required that the game was never finished.',
-	'production_period': 'Late 2008',
-	'status': 'Abandoned'
 }];

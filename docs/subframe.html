@@ -4,7 +4,7 @@
 <head>
     <meta charSet="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Mark&#x27;s New Home</title>
+    <title>Subframe</title>
     <meta name="description" content="Mark&#x27;s Homepage" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
@@ -19,16 +19,27 @@
 <body style="padding-bottom:30px">
     <nav class="navbar navbar-expand-sm navbar-light bg-light" style="margin-bottom:20px"><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" style="justify-content:center;width:800px" id="navbarSupportedContent">
-            <div class="navbar-nav"><a class="mx-2 nav-item nav-link" href="index.html">Home</a><a class="mx-2 nav-item nav-link" href="puzzles.html">Puzzles</a><a class="mx-2 nav-item nav-link active" href="subframe.html">Subframe</a><a class="mx-2 nav-item nav-link" href="stuff.html">Other Stuff</a><a class="mx-2 nav-item nav-link" href="faq.html">FAQ</a></div>
+            <div class="navbar-nav"><a class="mx-2 nav-item nav-link" href="index.html">Home</a><a class="mx-2 nav-item nav-link" href="stuff.html">Stuff I Made</a><a class="mx-2 nav-item nav-link" href="puzzles.html">Puzzles</a><a class="mx-2 nav-item nav-link active" href="subframe.html">Subframe</a><a class="mx-2 nav-item nav-link" href="faq.html">FAQ</a></div>
         </div>
     </nav>
-    <div class="container" style="max-width:600px;padding:0px 35px">
-        <p><b>What&#x27;s subframe?</b> Subframe is an electronics design paradigm in <a href="https://powdertoy.co.uk/">The Powder Toy</a>, a falling-sand game from back when falling-sand games were still a thing. It exploits the way that the game updates particles to create very fast electronics. Here are some cool things that use subframe:</p>
+    <div class="container" style="max-width:550px">
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="card-title"><b>Subframe tools quick access</b></div>
+                <div class="card-text">
+                    <ul class="mb-0">
+                        <li><a href="https://powdertoy.co.uk/Discussions/Thread/View.html?Thread=21251">The Subframe Mod</a>: GUI enhancements to help with subframe development.</li>
+                        <li><a href="https://github.com/krawthekrow/tpt_schemtools">SchemTools</a>: Lua framework for code-based subframe engineering.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p><b>What&#x27;s subframe?</b> Subframe is an electronics design paradigm in <a href="https://powdertoy.co.uk/">The Powder Toy</a>, a falling-sand game from back when falling-sand games were still a thing. It exploits the way that the game updates particles to create very fast electronics. Here are some things I made that use subframe:</p>
         <div class="card-group" style="margin-bottom:20px">
             <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2046454"><img class="card-img-top" src="static/img/powder-toy/gpu.png" alt="SIMD16S" /></a>
                 <div class="card-body" style="padding:15px">
                     <h5 class="card-title"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2046454">SIMD16S</a></h5>
-                    <p class="card-text">Primitive bitwise graphics card, enough to run Conway&#x27;s Game of Life.</p>
+                    <p class="card-text">Accelerator for bitmap operations running Conway&#x27;s Game of Life.</p>
                 </div>
             </div>
             <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2305687"><img class="card-img-top" src="static/img/powder-toy/color-screen.png" alt="DISP56S" /></a>
@@ -37,17 +48,20 @@
                     <p class="card-text">Low-latency color screen for ~15Hz video.</p>
                 </div>
             </div>
-            <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=1932845"><img class="card-img-top" src="static/img/powder-toy/r16k1s60.png" alt="R16K1S60" /></a>
+            <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2404111"><img class="card-img-top" src="static/img/powder-toy/divider.png" alt="26-Bit Divider" /></a>
                 <div class="card-body" style="padding:15px">
-                    <h5 class="card-title"><a href="https://powdertoy.co.uk/Browse/View.html?ID=1932845">R16K1S60</a></h5>
-                    <p class="card-text">The first subframe computer (by LBPHacker, not me).</p>
+                    <h5 class="card-title"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2404111">26-Bit Divider</a></h5>
+                    <p class="card-text">Division circuit based on the radix-2 <a href="https://en.wikipedia.org/wiki/Division_algorithm#SRT_division">SRT division algorithm</a>.</p>
                 </div>
             </div>
         </div>
-        <p><b>Why subframe?</b> Subframe is a niche field and is full of unsolved problems. Optimizing a circuit to be as small as possible is like code golf in a very esoteric language. The results are often satisfying and fun to play with. What&#x27;s more, Powder Toy is free and open source.</p>
-        <p>Interestingly, subframe engineering has many parallels with real-life digital logic design. While all the particles update sequentially, geometric constraints and the way FILT works make it such that circuits have to be designed with parallelism in mind. In fact, the best subframe adders are <a href="https://robey.lag.net/2012/11/14/how-to-add-numbers-2.html">Kogge-Stone</a> adders, and the best subframe divider is a radix-2 <a href="https://en.wikipedia.org/wiki/Division_algorithm#SRT_division">SRT divider</a>.</p>
+        <p>Subframe is often conflated with general Powder Toy electronics and computer-making, but, technically speaking, a creation is really only &quot;subframe&quot; if it exploits particle order in a way not explicitly supported by the base game. In terms of Minecraft analogies, subframe is more closely related to things like <a href="https://www.youtube.com/watch?v=uAy2FVYhUpY">piston fast transport</a> than to redstone computers.</p>
+        <p><b>Why subframe?</b> Subframe is a niche field and is full of unsolved problems. Optimizing a circuit to be as small as possible is like code golf in a very esoteric language. The results are often satisfying and fun to play with. What&#x27;s more, The Powder Toy is free and open source.</p>
+        <p>Interestingly, subframe engineering has many parallels with real-life digital logic design. While particles update sequentially, geometric constraints and FILT mechanics make it such that circuits have to be designed with parallelism in mind. For example, the best subframe adders to date are <a href="https://robey.lag.net/2012/11/14/how-to-add-numbers-2.html">Kogge-Stone</a> adders.</p>
         <p><b>Why not subframe?</b> Very few people still play The Powder Toy, so no one will know what you mean when you say &quot;subframe&quot;. Its physics is in no way realistic: memory access is immediate (though this may change with PHOT-stack-based memory), incrementers are O(1), and noise is never a problem. After a certain point, you don&#x27;t gain any transferrable skills.</p>
-        <p><b>How to subframe?</b> As with other things in The Powder Toy, the best way to learn is through reverse-engineering and experimentation. You could also come to <b>#powder-subframe</b> on Freenode IRC. Beyond that, here&#x27;s some material to help you get started.</p>
+        <p><b>How to subframe?</b> As with other things in The Powder Toy, the best way to learn is through reverse-engineering and experimentation. You could also come visit us at the <script>
+                document.write('<a href="htt' + 'ps://dis' + 'cord.g' + 'g/fj' + 'F24' + 'Hc">subframe discord server</a>');
+            </script> or <b>#powder-subframe</b> on <a href="https://libera.chat/">Libera.Chat</a>. Beyond that, here&#x27;s some material to help you get started.</p>
         <div class="card-group" style="margin-bottom:20px">
             <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2232626"><img class="card-img-top" src="static/img/powder-toy/sl101.png" alt="The Subframe Lessons" /></a>
                 <div class="card-body" style="padding:15px">
@@ -64,13 +78,12 @@
             <div class="card" style="margin:2px"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2170655"><img class="card-img-top" src="static/img/powder-toy/handbook.png" alt="The Subframe Handbook" /></a>
                 <div class="card-body" style="padding:15px">
                     <h5 class="card-title"><a href="https://powdertoy.co.uk/Browse/View.html?ID=2170655">The Subframe Handbook</a></h5>
-                    <p class="card-text">A collection of common circuits that you could use or reverse-engineer.</p>
+                    <p class="card-text">A slightly outdated collection of common circuits that you could use or reverse-engineer.</p>
                 </div>
             </div>
         </div>
-        <p>Once you&#x27;re sufficiently familiar with how things work, you could try using <a href="https://powdertoy.co.uk/Discussions/Thread/View.html?Thread=21251">my mod</a> for better productivity. As you might imagine, the game&#x27;s user interface wasn&#x27;t built with subframe development in mind.</p>
-        <p><b>What&#x27;s left to do?</b> The current published subframe computers and graphics chips use very old technology. Smaller and more powerful designs are possible. In fact, by my estimates, it should be possible to do things like play Pong, render interactive 3D graphics, and even run a rudimentary particle-based &quot;fluid simulation&quot; once the right hardware is developed.</p>
-        <p><b>Bonus!</b> It turns out that subframe-like machines exist in Minecraft too. Check out <a href="https://www.youtube.com/watch?v=uAy2FVYhUpY">this video</a> on fast piston transportation.</p>
+        <p>Once you&#x27;ve figured out the basics, you&#x27;ll probably want to download <a href="https://powdertoy.co.uk/Discussions/Thread/View.html?Thread=21251">my mod</a> or <a href="https://powdertoy.co.uk/Discussions/Thread/View.html?Thread=25877">Maticzpl&#x27;s Lua port</a> to help with things like particle order reloading and stack manipulation. You&#x27;ll also find it useful to learn how to automate particle placement and configuration with Lua. Lately, I&#x27;ve converted to using <a href="https://github.com/krawthekrow/tpt_schemtools">SchemTools</a> to develop circuits entirely in Lua, which makes it easier to test, refactor and document designs.</p>
+        <p><b>What&#x27;s left to do?</b> There&#x27;s certainly a lot to be done, even just in terms of making smaller and more powerful computer systems. There&#x27;s also continued work on basic technologies like velocity adders and megastacks, as well as application-specific components for things like video games. I&#x27;m most excited about massively parallel graphics, an area that published designs have barely scratched the surface of.</p>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
